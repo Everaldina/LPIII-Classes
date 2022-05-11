@@ -1,0 +1,4 @@
+como que vai ficar a formatação das coisas no contato
+verificar erros de inicializacao de datas em outros pacotes
+ver duas coisas pra cada metodo, pra usar em o ponto objeto
+Datas -- substituir a parte de contar mes pela funçao criada
