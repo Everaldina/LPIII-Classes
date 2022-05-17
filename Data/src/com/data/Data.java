@@ -187,7 +187,6 @@ public class Data {
 
     public int quantosDiasAte(Data outraData){
         int countDias=0;
-        boolean maior;
 
         countDias = countDiasAnos(ano, outraData.getAno());
         countDias += countDiasMeses(mes, outraData.getMes(), ano);
@@ -216,7 +215,7 @@ public class Data {
 
         if(fim==inicio)
             return dias;
-        maior = (fim>inicio)? true : false;
+        maior = (fim>=inicio)? true : false;
 
         if(!maior){
             aux = fim;
@@ -252,7 +251,7 @@ public class Data {
         boolean maior;
         byte aux;
 
-        if(fimMes>inicioMes)
+        if(fimMes>=inicioMes)
             maior = true;
         else
             maior = false;
@@ -263,9 +262,10 @@ public class Data {
             inicioMes = aux;
         }
 
-        while(fimMes>inicioMes){
-            fimMes--;
+        fimMes--;
+        while(fimMes>=inicioMes){
             dias += diaMes(fimMes, ano);
+            fimMes--;
         };
 
         if(maior)

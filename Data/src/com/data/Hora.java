@@ -3,6 +3,17 @@ package com.data;
 public class Hora {
     private byte horas, minutos, segundos;
 
+    public Hora(){
+        horas = 0;
+        minutos = 0;
+        segundos = 0;
+    }
+    public Hora(byte hrs, byte min, byte sec){
+        horas = hrs;
+        minutos = min;
+        segundos = sec;
+    }
+
     public boolean inicializarHora(byte hrs, byte min, byte sec){
         if(verificarHora(hrs, min, sec)){
             setHoras(hrs);
@@ -53,11 +64,11 @@ public class Hora {
 
     public int toSec(){
         int value;
-        value = segundos + (minutos*60) + (horas*360);
+        value = segundos + (minutos*60) + (horas*3600);
         return value;
     }
 
-    public void somarHora(byte hrs, byte min, byte sec){
+    public void somarHora(int hrs, int min, int sec){
         this.horas = (byte) ((hrs + this.horas)%24);
         this.minutos = (byte) ((min + this.minutos)%60);
         this.segundos = (byte) ((sec + this.segundos)%60);
@@ -65,5 +76,24 @@ public class Hora {
 
     public String printHora(){
         return horas+":"+minutos+":"+segundos;
+    }
+
+    public int cronometra(Hora outraHora){
+        int secAgora, secFim;
+        secAgora = this.toSec();
+        secFim = outraHora.toSec();
+        if(secFim >= secAgora)
+            return secFim-secAgora;
+        else
+            return 86400 +secFim -secAgora;
+    }
+
+    void adiantaemSegundos(int segundos){
+        int sec=0, min, hrs;
+        hrs = segundos/3600;
+        segundos%=3600;
+        min = segundos/60;
+        sec = segundos%60;
+        this.somarHora(hrs, min, sec);
     }
 }
