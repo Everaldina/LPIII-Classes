@@ -4,3 +4,14 @@ ver duas coisas pra cada metodo, pra usar em o ponto objeto
 Datas -- substituir a parte de contar mes pela funçao criada
 
 substituir os iniciarrr
+
+
+nome
+- to maiusculo
+- to minusulo
+- sem acentos
+- sem espaços
+- first maiscula
+
+- set
+- get

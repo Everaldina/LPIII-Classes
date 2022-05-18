@@ -3,6 +3,31 @@ package com.data;
 public class Contato {
     private String nome, email, telefone;
 
+    public class Nome{
+        private String nome;
+
+        public Nome(String nome){
+            this.nome = nome;
+        }
+        public Nome(){
+            nome = null;
+        }
+        public void setNome(String nome){
+            this.nome = nome;
+        }
+        public String getNome(){
+            return nome;
+        }
+    }
+
+    public class EMail{
+
+    }
+
+    public class Telefone{
+
+    }
+
     public Contato(String nome, String email, String tel){
         setNome(nome);
         setTel(formatNum(tel));
@@ -68,4 +93,6 @@ public class Contato {
     public int getDDD(){
         return Integer.parseInt(getTel().substring(1,3));
     }
+
+
 }
