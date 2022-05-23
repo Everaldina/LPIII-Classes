@@ -7,11 +7,22 @@ substituir os iniciarrr
 
 
 nome
-- to maiusculo
-- to minusulo
-- sem acentos
-- sem espaços
-- first maiscula
+- sem acentos !!!!
+- mudar modificadores
 
-- set
-- get
+
+
+
+os null ne tem que verificar pros textos
+//testar codigos de nome
+
+estaticos pensa
+- metodos sem instancias
+- coisas que muda pra todos
+
+
+email
+- get dominio
+- checkar se eh valido
+-
+get/setr

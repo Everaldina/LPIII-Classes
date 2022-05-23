@@ -5,3 +5,13 @@ Datas -- substituir a parte de contar mes pela funçao criada
 
 substituir os iniciarrr
 
+
+nome
+- sem acentos !!!!
+- sem espaços
+
+- set
+- get
+
+os null ne tem que verificar pros textos
+//testar codigos de nome
