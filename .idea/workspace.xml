@@ -5,22 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2170eb12-1e6d-48b2-87ae-eb5c7d94ad16" name="Changes" comment="implementaçao tel email nome&#10;começo ponto">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/src/Coordenadas/Ponto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/src/Coordenadas/SegmentoReta.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/src/Coordenadas/Triangulo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/src/com/data/EMailExemplo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/src/com/data/Telefone.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/src/com/data/TelefoneExemplo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/out/production/data/com/data/implementar.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Data/out/production/data/com/data/implementar.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/src/com/data/AgendamentoExemplo.java" beforeDir="false" afterPath="$PROJECT_DIR$/Data/src/com/data/AgendamentoExemplo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/src/com/data/Contato.java" beforeDir="false" afterPath="$PROJECT_DIR$/Data/src/com/data/Contato.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/src/com/data/ContatoExemplo.java" beforeDir="false" afterPath="$PROJECT_DIR$/Data/src/com/data/ContatoExemplo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/src/com/data/EMail.java" beforeDir="false" afterPath="$PROJECT_DIR$/Data/src/com/data/EMail.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/src/com/data/Nome.java" beforeDir="false" afterPath="$PROJECT_DIR$/Data/src/com/data/Nome.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/src/com/data/NomeExemplo.java" beforeDir="false" afterPath="$PROJECT_DIR$/Data/src/com/data/NomeExemplo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/src/com/data/implementar.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Data/src/com/data/implementar.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/src/com/data/Data.java" beforeDir="false" afterPath="$PROJECT_DIR$/Data/src/com/data/Data.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/LPIII-Classes/com/data/implementar.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LPIII-Classes/com/data/implementar.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -46,11 +33,13 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-  </component>
-  <component name="RunManager" selected="Application.ContatoExemplo">
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true"
+  }
+}]]></component>
+  <component name="RunManager" selected="Application.segTeste">
     <configuration name="ContatoExemplo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.data.ContatoExemplo" />
       <module name="LPIII-Classes" />
@@ -66,19 +55,6 @@
     </configuration>
     <configuration name="EMailExemplo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.data.EMailExemplo" />
-      <module name="LPIII-Classes" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.data.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ExemploData" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.data.ExemploData" />
       <module name="LPIII-Classes" />
       <extension name="coverage">
         <pattern>
@@ -116,13 +92,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="segTeste" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Coordenadas.segTeste" />
+      <module name="LPIII-Classes" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Coordenadas.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.segTeste" />
         <item itemvalue="Application.ContatoExemplo" />
         <item itemvalue="Application.TelefoneExemplo" />
         <item itemvalue="Application.EMailExemplo" />
         <item itemvalue="Application.NomeExemplo" />
-        <item itemvalue="Application.ExemploData" />
       </list>
     </recent_temporary>
   </component>
