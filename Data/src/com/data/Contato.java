@@ -1,97 +1,69 @@
 package com.data;
 
 public class Contato {
-    private String nome, email, telefone;
+    private Nome nome;
+    private EMail email;
+    private Telefone telefone;
 
-    public class Nome{
-        private String nome;
 
-        public Nome(String nome){
-            this.nome = nome;
-        }
-        public Nome(){
-            nome = null;
-        }
-        public void setNome(String nome){
-            this.nome = nome;
-        }
-        public String getNome(){
-            return nome;
-        }
+    public Contato(Nome nome, EMail email, Telefone telefone){
+        this.nome  = nome;
+        this.email = email;
+        this.telefone = telefone;
     }
-
-    public class EMail{
-
+    public Contato(Nome nome, Telefone telefone){
+        this.nome  = nome;
+        this.telefone = telefone;
+        email = new EMail();
     }
-
-    public class Telefone{
-
+    public Contato(Nome nome, EMail email){
+        this.nome  = nome;
+        this.email = email;
+        telefone = new Telefone();
     }
-
-    public Contato(String nome, String email, String tel){
-        setNome(nome);
-        setTel(formatNum(tel));
-        setEmail(email);
-    }
-
     public Contato(){
-        setNome(null);
-        setTel(null);
-        setEmail(null);
+        nome  = new Nome();
+        email = new EMail();
+        telefone = new Telefone();
     }
-    public boolean inicializaContato(String nome, String email, String tel){
-        setNome(nome);
-        setTel(formatNum(tel));
-        setEmail(email);
 
-        if(getTel()==null)
-            return false;
-
-        return true;
-    }
 
     private void setNome(String nome){
-        this.nome = nome;
+        this.nome.setNome(nome);
     }
     private void setEmail(String email){
-        this.email = email;
+        this.email.setEMail(email);
     }
     private void setTel(String tel){
-        this.telefone = tel;
+        this.telefone.setTel(tel);
     }
 
     public String getNome(){
-        return nome;
+        return nome.getNome();
     }
     public String getEmail(){
-        return email;
+        return email.getEMail();
     }
     public String getTel(){
-        return telefone;
+        return telefone.getTel();
     }
 
     public void printDados(){
-        System.out.println("- Nome: "+nome);
-        System.out.println("- Email: "+email);
-        System.out.println("- Telefone: "+telefone);
+        System.out.println("- Nome: "+nome.getNome());
+        System.out.println("- Email: "+email.getEMail());
+        System.out.println("- Telefone: "+this.getFormatNum());
     }
 
-    public String sobrenome(){
-        int pos = nome.lastIndexOf(' ');
-        return nome.substring(pos);
+    public String getSobrenome(){
+        int pos = nome.getNome().lastIndexOf(' ');
+        return nome.getNome().substring(pos).trim();
     }
-    private String formatNum(String num){
-        String numFormat = null;
-        if(num.length()!=11)
-            return numFormat;
-        else{
-            numFormat = "("+num.substring(0,2)+") "+num.substring(2,7)+"-"+num.substring(7);
-            return numFormat;
-        }
+    private String getFormatNum(){
+        return telefone.formatTel();
     }
 
-    public int getDDD(){
-        return Integer.parseInt(getTel().substring(1,3));
+    public String returnDDD(){
+        return telefone.getDDD();
     }
 
 

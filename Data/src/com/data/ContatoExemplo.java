@@ -3,15 +3,16 @@ import java.util.*;
 
 public class ContatoExemplo {
     public static void main(String[] args){
-        String nome="Everaldina Guimaraes Barbosa";
-        String email = "egbarbosa.cic@uesc.br";
-        String tel = "73982003551";
+        Nome nome= new Nome("Everaldina Guimaraes Barbosa");
+        EMail email = new EMail("egbarbosa.cic@uesc.br");
+        Telefone tel = new Telefone("73","982003551");
 
-        Contato contato = new Contato();
-        contato.inicializaContato(nome, email, tel);
+        Contato contato = new Contato(nome, email, tel);
 
         contato.printDados();
-        System.out.println("\n\nSobrenome: "+contato.sobrenome());
-        System.out.println("DDD: "+contato.getDDD());
+        System.out.println("\nSobrenome: "+contato.getSobrenome());
+        System.out.println("DDD: "+contato.returnDDD());
+
+
     }
 }

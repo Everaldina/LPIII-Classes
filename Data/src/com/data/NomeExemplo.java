@@ -10,7 +10,7 @@ public class NomeExemplo {
         System.out.println("Nome: "+nome1.getNome());
         nome1.toMasc();
         System.out.println("Nome: "+nome1.getNome());
-        nome1.toNoSpace();
+        nome1.noSpace();
         System.out.println("Nome: "+nome1.getNome());
         nome1.toMin();
         System.out.println("Nome: "+nome1.getNome());

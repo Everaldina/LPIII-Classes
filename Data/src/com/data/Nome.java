@@ -7,7 +7,7 @@ public class Nome {
         this.nome = nome;
     }
     public Nome(){
-        nome = null;
+        this(null);
     }
 
     public void toMasc(){
@@ -32,7 +32,7 @@ public class Nome {
         nome = temp;
     }
 
-    public void toNoSpace(){
+    public void noSpace(){
         String[] parts = nome.split(" ");
         String temp=null, aux;
         int partTam = parts.length;

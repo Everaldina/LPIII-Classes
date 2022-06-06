@@ -1,28 +1,25 @@
 como que vai ficar a formatação das coisas no contato
 verificar erros de inicializacao de datas em outros pacotes
-ver duas coisas pra cada metodo, pra usar em o ponto objeto
+ver duas coisas pra cada metodo, pra usar em o Coordenadas objeto
 Datas -- substituir a parte de contar mes pela funçao criada
 
 substituir os iniciarrr
 
+mudar modificadores tds dps de teste!!!!!!!!!
 
 nome
 - sem acentos !!!!
 - mudar modificadores
 
 
-
+- telefone  coloca so uma string DDD + numero
 
 os null ne tem que verificar pros textos
-//testar codigos de nome
 
 estaticos pensa
 - metodos sem instancias
 - coisas que muda pra todos
 
 
-email
-- get dominio
-- checkar se eh valido
--
-get/setr
+
+concertar agendamento dps de mudar pras classes de agregacao

@@ -5,13 +5,21 @@ Datas -- substituir a parte de contar mes pela funçao criada
 
 substituir os iniciarrr
 
+mudar modificadores tds dps de teste!!!!!!!!!
 
 nome
 - sem acentos !!!!
-- sem espaços
+- mudar modificadores
 
-- set
-- get
+
+- telefone  coloca so uma string DDD + numero
 
 os null ne tem que verificar pros textos
-//testar codigos de nome
+
+estaticos pensa
+- metodos sem instancias
+- coisas que muda pra todos
+
+
+
+concertar agendamento dps de mudar pras classes de agregacao
